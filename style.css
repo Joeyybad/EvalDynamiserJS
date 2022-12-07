@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Lato";
+  src: url('images/Lato/Lato-Regular.ttf');
+}
+
+h1{
+  font-family: Lato;
+}
+
