@@ -3,7 +3,30 @@
   src: url('images/Lato/Lato-Regular.ttf');
 }
 
-h1{
+html{
   font-family: Lato;
+}
+
+.container{
+  background-color: rgb(206, 195, 195);
+  height: 300px;
+  width: 800px;
+  margin: auto;
+
+}
+.newgame{
+  text-align: center;
+}
+.player{
+  font-family: Lato;
+  font-size: 35px;
+  text-align: center;
+}
+
+.result{
+  width: 40px;
+  height: 40px;
+  font-size: 35px ;
+  background-color: rgb(187, 72, 72);
 }
 
