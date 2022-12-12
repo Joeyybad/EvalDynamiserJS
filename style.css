@@ -7,26 +7,28 @@ html{
   font-family: Lato;
 }
 
-.container{
-  background-color: rgb(206, 195, 195);
-  height: 300px;
-  width: 800px;
-  margin: auto;
 
-}
-.newgame{
-  text-align: center;
-}
 .player{
   font-family: Lato;
   font-size: 35px;
-  text-align: center;
+  
+}
+
+.score{
+  font-size: 35px;
+  margin:1em;
+  color: red ;
 }
 
 .result{
-  width: 40px;
-  height: 40px;
-  font-size: 35px ;
-  background-color: rgb(187, 72, 72);
+border: 1px solid rgb(65, 65, 65);
+border-radius: 2px;
+box-shadow:6px 6px 2px 1px rgb(36, 35, 35) ;
+font-size: 35px;
+padding: 10px;
+
 }
 
+#dice{
+  box-shadow: -1px 1px -1px 1px rgb(136, 2, 2) ;
+}

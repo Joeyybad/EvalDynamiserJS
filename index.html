@@ -11,25 +11,55 @@
   <link rel ="stylesheet" type="text/css" href="style.css">
   <title>Dice Game JS</title>
 </head>
-<body>
-  <main class="container-fluid">
-    <div class="row">
-      <h1 class="text-center col-12">Game Dice</h1>
+<body class=" bg-secondary bg-gradient py-4">
+  <main class="container-fluid bg-light bg-gradient">
+    <div class="row card-header">
+      <h1 class="col-12 text-center title">Game Dice</h1>
+    </div>
     <div class="row">
       <div class="col-12 text-center">
-        <span class="newgame text-center"><svg xmlns="http://www.w3.org/2000/svg" type="button" width="20" height="20" fill="currentColor" class="bi text-danger bi-plus-circle" viewBox="0 0 16 16">
+        <span class=" "><svg xmlns="http://www.w3.org/2000/svg" id="newGame"type="button" width="20" height="20" fill="currentColor" class="bi text-danger bi-plus-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
           <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg> NEW GAME
         </span>
       </div>
     </div>
-    <div class="row">
-      <div class="player col">Player 1</div>
-      <div class="result "></div>
-      <div class="player"> Player 2</div>
-      <div class="result"></div>
-    </div>
+    <div class="row card-body">
+      <section class="col-4 text-center">
+        <h3 class="player">Player 1</h3>
+        <h4 class ="score"><span id='ScoreFirstPlayer'>0</span></h4>
+          <div class="result ">
+            <h5 class="currentScore"> Current Score <br><span id='currentFirstPlayer'>0</span></h5>
+          </div>
+      </section>
+      <section class="col-4 text-center ">
+        <img width='80px' height='80px' id='dice' src='images/dice5.png'><br>
+        <div class="row">
+          <div class="col-12 text-center mt-4">
+            <div class="">
+              <svg xmlns="http://www.w3.org/2000/svg" id="diceRoll"type="button"width="20" height="20" fill="currentColor" class="bi bi-arrow-repeat text-danger m-1" viewBox="0 0 16 16">
+                <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/>
+                <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/>
+             </svg>Roll the dice
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" id="diceRoll"type="button" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-down text-danger" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M3.5 10a.5.5 0 0 1-.5-.5v-8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 0 0 1h2A1.5 1.5 0 0 0 14 9.5v-8A1.5 1.5 0 0 0 12.5 0h-9A1.5 1.5 0 0 0 2 1.5v8A1.5 1.5 0 0 0 3.5 11h2a.5.5 0 0 0 0-1h-2z"/>
+                <path fill-rule="evenodd" d="M7.646 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V5.5a.5.5 0 0 0-1 0v8.793l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+              </svg> Hold
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="col-4 text-center"> 
+          <h3 class="player">Player 2</h3>
+          <h4 class ="score"><span id='scoreSecondPlayer'>0</span></h4>
+          <div class="justify-content-center result bg-danger">
+            <h5 class="currentScore"> Current Score <br><span id='currentSecondPlayer'>0</span></h5>
+          </div>
+      </section>
+  </main>
 
 
 
