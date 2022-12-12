@@ -6,19 +6,39 @@
 html{
   font-family: Lato;
 }
-
-
+.title{
+  text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
+}
+.newgame{
+  font-size: 20px;
+  text-shadow: rgb(255, 0, 0) 1px 1px;
+}
+.diceroll{
+  font-size: 16px;
+  margin: 2px;
+  text-shadow: rgb(255, 0, 0) 1px 1px;
+}
+.hold{
+  font-size: 16px;
+  margin: 2px;
+  text-shadow: rgb(255, 0, 0) 1px 1px;
+}
 .player{
   font-family: Lato;
   font-size: 35px;
-  
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
+
 
 .score{
   font-size: 35px;
   margin:1em;
   color: red ;
+  
 }
+
 
 .result{
 border: 1px solid rgb(65, 65, 65);
