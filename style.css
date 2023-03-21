@@ -50,5 +50,13 @@ padding: 10px;
 }
 
 #dice{
-  box-shadow: -1px 1px -1px 1px rgb(136, 2, 2) ;
+  box-shadow: -1px 1px -1px 1px rgb(136, 2, 2);
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
